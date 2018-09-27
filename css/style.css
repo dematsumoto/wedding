@@ -9,7 +9,7 @@ p {line-height: 2}
 }
 
 .bgimg {background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("../images/wedding_couple.jpg")}
-.bgimg2 {background-image: linear-gradient(rgba(100,100,100,0.3), rgba(255,255,255,0.3)), url("../images/flowers.jpg")}
+.bgimg2 {background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("../images/flowers.jpg")}
 
 .slides {
 	display:none;
