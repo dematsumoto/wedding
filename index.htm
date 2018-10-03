@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alex+Brush" >
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+<link rel="icon" type="image/png" sizes="100x100" href="images/favicon.png">
 
 <body>
 <!-- Header / Home-->
@@ -22,27 +23,33 @@
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
   <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
-    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Mathi & Dou</a>
-    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Cerimônia</a>
-    <a href="#lista" style="width:25%" class="w3-bar-item w3-button w3-hover-black">Lista de Presentes</a>
+    <a style="width:25%" class="w3-bar-item w3-button" onclick="scrollToHome()">Home</a>
+    <a style="width:25%" class="w3-bar-item w3-button" onclick="scrollToUs()">Mathi & Dou</a>
+    <a style="width:25%" class="w3-bar-item w3-button" onclick="scrollToWedding()">Cerimônia</a>
+    <a style="width:25%" class="w3-bar-item w3-button w3-hover-black" onclick="scrollToList()">Lista de Presentes</a>
   </div>
 </div>
 
 <!-- About -->
 <div class="w3-container w3-padding-64 w3-pale-red" id="us">
   <div class="w3-content w3-display-container">
-    <h1 class="w3-center w3-text-grey with-raleway"><b>Mathilde & Douglas</b></h1>
-    <img class="w3-round w3-grayscale-min slides w3-animate-opacity" src="images/us/ilha_grande.jpg">
-    <img class="w3-round w3-grayscale-min slides w3-animate-opacity" src="images/us/ax.jpg">
-    <img class="w3-round w3-grayscale-min slides w3-animate-opacity" src="images/us/carnaval.jpg">
-    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-    <p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.</i>
-    </p><br>
-    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Detalhes da Cerimônia</a></p>
+    <div class="w3-container">
+      <h1 class="w3-center w3-text-grey with-raleway"><b>Mathilde & Douglas</b></h1>
+      <img class="w3-round w3-grayscale-min slides w3-animate-opacity" src="images/us/ilha_grande.jpg">
+      <img class="w3-round w3-grayscale-min slides w3-animate-opacity" src="images/us/ax.jpg">
+      <img class="w3-round w3-grayscale-min slides w3-animate-opacity" src="images/us/carnaval.jpg">
+      <button class="w3-button w3-black w3-display-left prev-img" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right next-img" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <ul class="" style="padding-inline-start: 0px;">
+      <li id="fr-click" class="w3-button w3-black w3-round" onclick="switchToFr()">FR</li>
+      <li id="pt-click" class="w3-button w3-black w3-round w3-opacity-max" onclick="switchToPt()">PT</li>
+    </ul>
+    <p id="us-fr" class="w3-animate-opacity">Tout a commencé en anglais (en mauvais anglais pour être précis) un jour de novembre 2013, là bas en Caroline du Nord. Et depuis ce jour là, jusqu’à aujourd’hui, que d’aventures ! D’abord deux ans de relation à super-distance (parce que nous ne faisons pas les choses à moitié m’voyez) entre SKYPE hebdomadaire, utilisation obsessive de Whatsapp, lettres manuscrites et voyages transocéaniques de quelques jours à plusieurs mois. Et puis Belo Horizonte, pendant trois ans, où nous sommes doucement mais sûrement passé de l’anglais à un doux mélange de portugais-français, et de la vie d’étudiant à la vie d’adulte. Nouvelle étape aujourd’hui, déménager et se marier, parce que vraiment, en fait, on s’aime !
+    </p>
+    <p id="us-pt" class="w3-animate-opacity"><i>Tudo começou em inglês (em inglês ruim, para ser preciso) em novembro de 2013, na Carolina do Norte, e desde aquele dia, até hoje, só aventuras! Os dois primeiros anos de relacionamento com a super-distância (porque não fazemos as coisas pela metade) entre o SKYPE semanal, o uso obsessivo do Whatsapp, cartas manuscritas e viagens transoceânicas de alguns dias a vários meses. E depois Belo Horizonte, há três anos, onde passamos do inglês para uma doce mistura de português-francês e da vida de estudante para a vida adulta. Novo passo hoje, mudar-se e casar-se, porque realmente, na verdade, nos amamos!</i>
+    </p>
+    <p class="w3-center"><a class="w3-button w3-black w3-round w3-padding-large w3-large" onclick="scrollToWedding()">Detalhes da Cerimônia</a></p>
   </div>
 </div>
 
@@ -75,7 +82,7 @@
 </div>
 
 <!-- Gifts section -->
-<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="lista">
+<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="list">
   <h1 class="with-raleway">Lista de Presentes | Liste de Mariage</h1>
   <p class="w3-large">Ajude os Noivos na Lua de Mel! <span<i class="fas fa-plane-departure"></i></span></p>
   <p class="w3-large">Aidez les mariés à partir en voyage de noces ! <span<i class="fas fa-plane-departure"></i></span></p>
@@ -86,6 +93,8 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
+  <p>Photos provided by <a href="https://www.pexels.com/" title="Pexels" target="_blank" class="w3-hover-text-grey">Pexels</a></p>
+  <p>Icons provided by <a href="https://icons8.com" title="Icon8" target="_blank" class="w3-hover-text-grey">Icon8</a></p>
 </footer>
 <div class="w3-hide-small" style="margin-bottom:32px">&nbsp;</div>
 

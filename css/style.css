@@ -19,3 +19,15 @@ p {line-height: 2}
 .with-raleway {
 	font-family: "Raleway", sans-serif
 }
+
+.prev-img {
+	margin-left: 16px;
+}
+
+.next-img {
+	margin-right: 16px;
+}
+
+#us-pt {
+  display: none;
+}
