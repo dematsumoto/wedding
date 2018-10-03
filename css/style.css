@@ -21,11 +21,14 @@ p {line-height: 2}
 }
 
 .prev-img {
-	margin-left: 16px;
+	position: relative;
+	bottom: 150px;
+	left:0px;
 }
 
 .next-img {
-	margin-right: 16px;
+	position: relative;
+	bottom: 150px;
 }
 
 #us-pt {
