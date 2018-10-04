@@ -49,6 +49,14 @@ p {line-height: 2}
     white-space: nowrap;
 }
 
-.with-coming-soon {
-    font-family: 'Coming Soon', cursive;
+@media all and (max-width: 599px) and (min-width: 320px) {
+    .w3-xxlarge {
+        font-size: 30px!important;
+    }
+    .w3-jumbo {
+    	font-size: 60px!important;
+    }
+    h1 {
+    	font-size: 30px;
+    }
 }
