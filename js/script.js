@@ -53,13 +53,11 @@ function scrollTo(element, to, duration) {
 function scrollToHome(){
   elmnt = document.getElementById("home");
   scrollTo(document.documentElement, elmnt.offsetTop, 200);
-  w3_close();
 }
 
 function scrollToUs(){
   elmnt = document.getElementById("us");
   scrollTo(document.documentElement, elmnt.offsetTop, 200);
-  w3_close();
 }
 
 function scrollToWedding(){
