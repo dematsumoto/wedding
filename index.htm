@@ -25,10 +25,11 @@
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
   <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-    <a style="width:25%" class="w3-bar-item w3-button w3-hover-pale-red w3-round" onclick="scrollToHome()">Home</a>
-    <a style="width:25%" class="w3-bar-item w3-button w3-hover-pale-red w3-round" onclick="scrollToUs()">Mathi & Dou</a>
-    <a style="width:25%" class="w3-bar-item w3-button w3-hover-pale-red w3-round" onclick="scrollToWedding()">Cerimônia | Cérémonie</a>
-    <a style="width:25%" class="w3-bar-item w3-button w3-hover-pale-red w3-round" onclick="scrollToList()">Lista de Presentes</a>
+    <a style="width:20%" class="w3-bar-item w3-button w3-hover-pale-red w3-round" onclick="scrollToHome()">Home</a>
+    <a style="width:20%" class="w3-bar-item w3-button w3-hover-pale-red w3-round" onclick="scrollToUs()">Mathi & Dou</a>
+    <a style="width:20%" class="w3-bar-item w3-button w3-hover-pale-red w3-round" onclick="scrollToWedding()">Cerimônia | Cérémonie</a>
+    <a style="width:20%" class="w3-bar-item w3-button w3-hover-pale-red w3-round" onclick="scrollToTourism()">Turismo</a>
+    <a style="width:20%" class="w3-bar-item w3-button w3-hover-pale-red w3-round" onclick="scrollToRsvp()">RSVP</a>
   </div>
 </div>
 
@@ -72,24 +73,53 @@
       <div class="w3-half">
         <h2>Quando? | Quand ?</h2>
         <p>Cerimônia Religiosa | Cérémonie Religieuse- 15:00</p>
-        <p>Jantar | Vin d'honneur - 17:00</p>
+        <p>Coquetel | Cocktail - 18:00</p>
+        <p>Jantar | Vin d'honneur - 20:00</p>
+        <p><a class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" onclick="scrollToRsvp()">Confirmar Presença/Confirmez Présence</a></p>    
       </div>
       <div class="w3-half">
         <h2>Onde? | Où ?</h2>
         <p>56 Place Saint-Pierre, 11150 Villasavary, France - <span><a href="https://goo.gl/maps/m1e2ZcAExnp" target="_blank"><i class="fas fa-map-marked-alt fa-lg w3-hover-opacity"></i></a></span></p>
         <p>Les Vicaris, 11150 Villasavary, France - <span><a href="https://www.facebook.com/Les-Vicaris-105353043133825/" target="_blank"><i class="fab fa-facebook fa-lg w3-hover-opacity"></i></a></span> <span><a href="https://goo.gl/maps/yfxH6LiBs7F2" target="_blank"><i class="fas fa-map-marked-alt fa-lg w3-hover-opacity"></i></a></span></p>
+        <p><br></p>
+        <p><a class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" onclick="scrollToTourism()">Informações Turísticas</a></p>
       </div>
     </div>
   </div>
 </div>
 
+<!-- Touristic section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-opacity-min" id="tourism">
+  <div class="w3-content">
+    <h1 class="w3-text-grey with-raleway"><b>Informações Turísticas</b></h1>
+    <h1 class="w3-text-grey with-raleway"><b>Informações Turísticas</b></h1>
+    <div class="w3-row">
+      <div class="w3-half">
+        <p class="w3-xlarge">Hospedagem</p>
+        <p><a href="http://www.leclosfleuri.fr" target="_blank">Le Clos Fleuri</a></p>
+        <p>Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie leo, vitae iaculis nisl. Cevadis im ampola pa arma uma pindureta. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Copo furadis é disculpa de bebadis, arcu quam euismod.</p>
+        <p><a href="https://www.accorhotels.com/gb/hotel-7405-ibis-budget-castelnaudary/index.shtml" target="_blank">Ibis Budget</a></p>
+        <p>Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Quem num gosta di mé, boa gentis num é.</p>
+      </div>
+      <div class="w3-half">
+        <p class="w3-xlarge">Guias Turísticos</p>
+        <p><a href="#" target="_blank">Guia 1</a></p>
+        <p>Mussum Ipsum, cacilds vidis litro abertis. Praesent malesuada urna nisi, quis volutpat erat hendrerit non.</p>
+        <p><a href="#" target="_blank">Guia 2</a></p>
+        <p>Mussum Ipsum, cacilds vidis litro abertis. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <!-- RSVP section -->
 <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
-  <h1 class="with-raleway">Esperamos por Vocês | Esperamos por Vocês</h1>
+  <h1 class="with-raleway">Esperamos Por Vocês | Nous Vous Attendons</h1>
   <p class="w3-large">Confirme sua presença! </p>
-  <p class="w3-large">Confirme sua Presença! </p>
+  <p class="w3-large">Confirmez votre présence! </p>
   <p class="w3-xlarge">
-    <a href="https://www.ameliste.fr/list/blog/rsvp?site=mathietdouglas" target="_blank"><button class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Confimar | RSVP <span<i class="far fa-calendar-check"></i></span></button></a>
+    <a href="https://www.ameliste.fr/list/blog/rsvp?site=mathietdouglas" target="_blank"><button class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">Confimar | Confirmer <span<i class="far fa-calendar-check"></i></span></button></a>
   </p>
 </div>
 

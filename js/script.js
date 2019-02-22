@@ -69,3 +69,13 @@ function scrollToList(){
   elmnt = document.getElementById("list");
   scrollTo(document.documentElement, elmnt.offsetTop, 200);
 }
+
+function scrollToTourism(){
+  elmnt = document.getElementById("tourism");
+  scrollTo(document.documentElement, elmnt.offsetTop, 200);
+}
+
+function scrollToRsvp(){
+  elmnt = document.getElementById("rsvp");
+  scrollTo(document.documentElement, elmnt.offsetTop, 200);
+}
