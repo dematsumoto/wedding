@@ -8,7 +8,7 @@ p {line-height: 2}
     background-size: cover;
 }
 
-.bgimg {background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.8)), url("../images/flowers2.jpg")}
+.bgimg {background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.5)), url("../images/rings.jpg")}
 .bgimg2 {background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("../images/flowers.jpg")}
 
 .slides {
